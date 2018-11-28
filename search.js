@@ -10,7 +10,7 @@ var contain = process.argv[3];
 //console.log(contain);
    
 	if(process.argv[2] === undefined){
-	console.log(" help  ");
+	console.log("USAGE: node search [EXT] [TEXT]");
 	 return;
 	} 
 
@@ -48,6 +48,6 @@ var contain = process.argv[3];
 searching(__dirname);
 
 		if(counter===0){
-		console.log(' no file was found ---');
+		console.log('NO file was found ');
 		
 		}
