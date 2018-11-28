@@ -30,16 +30,13 @@ var contain = process.argv[3];
         }
 		
         else if (filename.substr( filename.lastIndexOf(".") + 1 ) == filter  ) {
-		
-	
-		
+			
 	 var contents = fs.readFileSync(filename, 'utf8');
 	 
 	 if(contents.includes(contain)) {
 		 counter++;
 		console.log('--:'+filename);
 	 } 
-		
         };
     };
 	
@@ -49,5 +46,4 @@ searching(__dirname);
 
 		if(counter===0){
 		console.log('NO file was found ');
-		
 		}
